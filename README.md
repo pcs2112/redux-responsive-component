@@ -1,2 +1,2 @@
 # redux-responsive-component
-Component connected to the redux store to provide responsiveness in the server and browser.
+High order component to provide responsiveness to React components in the server and browser.
