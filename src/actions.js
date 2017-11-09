@@ -39,7 +39,7 @@ export const setMobileDetect = ({
   }
 
   if (payload.phone || payload.tablet) {
-    payload.mobile = false;
+    payload.mobile = true;
   }
 
   return payload;
