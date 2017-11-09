@@ -17,7 +17,7 @@ export default (state = initialState, action) => {
       } = { ...initialState, ...action };
 
       let device;
-      if (mobile) {
+      if (phone) {
         device = 'mobile';
       } else if (tablet) {
         device = 'tablet';

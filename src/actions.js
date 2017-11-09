@@ -26,22 +26,20 @@ export const setMobileDetect = ({
     phone: false,
     tablet: false,
     mobile: false,
-    computer: true
+    computer: false
   };
 
   const width = document.documentElement.clientWidth || document.body.clientWidth;
   if (width < breakPoints.tablet) {
     payload.phone = true;
-    payload.mobile = true;
-  }
-
-  if (width < breakPoints.computer) {
+  } else if (width < breakPoints.computer) {
     payload.tablet = true;
-    payload.mobile = true;
+  } else {
+    payload.computer = true;
   }
 
-  if (payload.mobile) {
-    payload.computer = false;
+  if (payload.phone || payload.tablet) {
+    payload.mobile = false;
   }
 
   return payload;
