@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { getDisplayName } from 'javascript-utils/lib/react';
 
-const withResponsiveness = (WrappedComponent, stateName) => {
+const withResponsiveness = (WrappedComponent, stateName = 'responsive') => {
   const WithResponsiveness = props => (
     <WrappedComponent {...props} />
   );
