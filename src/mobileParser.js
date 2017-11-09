@@ -7,6 +7,6 @@ export const mobileParser = ({ headers = {} } = {}) => {
     phone: !!md.phone(),
     tablet: !!md.tablet(),
     mobile: !!md.mobile(),
-    desktop: !md.mobile()
+    computer: !md.mobile()
   };
 };
