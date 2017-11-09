@@ -2435,6 +2435,15 @@ isstream@~0.1.2:
   version "0.1.2"
   resolved "https://registry.yarnpkg.com/isstream/-/isstream-0.1.2.tgz#47e63f7af55afa6f92e1500e690eb8b8529c099a"
 
+"javascript-utils@git+https://github.com/pcs2112/javascript-utils.git":
+  version "0.0.10"
+  resolved "git+https://github.com/pcs2112/javascript-utils.git#96e6de42ae9ec21cd2d4bd1fca8f878636d05531"
+  dependencies:
+    lodash "^4.17.4"
+    moment "^2.18.1"
+    prop-types "^15.5.10"
+    redux-object "^0.5.3"
+
 js-tokens@^3.0.0, js-tokens@^3.0.2:
   version "3.0.2"
   resolved "https://registry.yarnpkg.com/js-tokens/-/js-tokens-3.0.2.tgz#9866df395102130e38f7f996bceb65443209c25b"
@@ -2711,6 +2720,10 @@ mocha@^4.0.1:
     he "1.1.1"
     mkdirp "0.5.1"
     supports-color "4.4.0"
+
+moment@^2.18.1:
+  version "2.19.1"
+  resolved "https://registry.yarnpkg.com/moment/-/moment-2.19.1.tgz#56da1a2d1cbf01d38b7e1afc31c10bcfa1929167"
 
 ms@2.0.0:
   version "2.0.0"
@@ -3202,6 +3215,10 @@ readdirp@^2.0.0:
     minimatch "^3.0.2"
     readable-stream "^2.0.2"
     set-immediate-shim "^1.0.1"
+
+redux-object@^0.5.3:
+  version "0.5.3"
+  resolved "https://registry.yarnpkg.com/redux-object/-/redux-object-0.5.3.tgz#0b0b18d19e7edef0f16c657b7e1a134f896f8b0a"
 
 redux@^3.0.4:
   version "3.7.2"
