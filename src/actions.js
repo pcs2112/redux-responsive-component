@@ -1,4 +1,5 @@
 import { isDOMAvailable } from 'javascript-utils/lib/device';
+import { isNumber } from 'javascript-utils/lib/number';
 
 export const SET_MOBILE_DETECT = '@@redux-responsive-component/SET_MOBILE_DETECT';
 
@@ -6,6 +7,21 @@ const breakPoints = {
   computer: 992,
   tablet: 768,
   mobile: 320
+};
+
+/**
+ * Call before using this module to override the default breakpoints.
+ *
+ * @param {Object} newBreakPoints
+ */
+export const setBreakPoints = (newBreakPoints) => {
+  if (newBreakPoints !== null && typeof newBreakPoints === 'object') {
+    Object.keys(newBreakPoints).forEach((key) => {
+      if (isNumber(newBreakPoints[key])) {
+        breakPoints[key] = newBreakPoints[key];
+      }
+    });
+  }
 };
 
 export const setMobileDetect = ({
